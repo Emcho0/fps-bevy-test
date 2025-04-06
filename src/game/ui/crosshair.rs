@@ -1,8 +1,8 @@
 use bevy::{prelude::*, window::PrimaryWindow};
 
 pub fn spawn_crosshair(window_query: Query<&Window, With<PrimaryWindow>>, mut commands: Commands) {
-    let crosshair_size = 2.0;
     let window = window_query.get_single().unwrap();
+    let crosshair_size = 2.0;
 
     commands
         .spawn(NodeBundle {

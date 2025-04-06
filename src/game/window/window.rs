@@ -1,11 +1,10 @@
-use crate::game::cursor::*;
 use bevy::{
     prelude::*,
     window::{PrimaryWindow, WindowMode, WindowResolution},
 };
 
+use crate::game::cursor::*;
 pub struct WindowSettingsPlugin;
-
 impl Plugin for WindowSettingsPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(cursor::CursorPlugin)

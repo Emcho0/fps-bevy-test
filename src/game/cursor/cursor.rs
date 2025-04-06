@@ -23,8 +23,8 @@ impl Cursor {
         self.locked = !self.locked;
         window.cursor.visible = !self.locked;
         if self.locked {
-            let window_height = window.height();
             let window_width = window.width();
+            let window_height = window.height();
             window.cursor.grab_mode = CursorGrabMode::Locked;
             window.set_cursor_position(Some(Vec2::new(window_width / 2., window_height / 2.)));
         } else {
