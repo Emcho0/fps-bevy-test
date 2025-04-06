@@ -45,8 +45,8 @@ fn init_grid_shot(
 ) {
     let grid_shot = GridShot {
         grid_size: 5,
-        cell_size: 5.0,
-        max_targets: 5,
+        cell_size: 10.0,
+        max_targets: 10,
     };
 
     let target_material = materials.add(StandardMaterial {
